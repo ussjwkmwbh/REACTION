@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 function ProCard(props){
     return(
         <div className="card">
-            <img className="card-image" src={props.img_ssrc} alt={props.alt} />
+            <img className="card-image" src={props.img_src} alt={props.alt} />
             <h2 className="card-head">{props.name}</h2>
             <p className="card-para">{props.about}</p>
             {props.age && <p>Age: {props.age}</p>}
@@ -17,7 +17,7 @@ ProCard.propTypes = {
     isPro: PropTypes.bool
 
 }
-ProCard.defaltProps = {
+ProCard.defaultProps = {
     name : "Guest",
     about : "Description"
 }
