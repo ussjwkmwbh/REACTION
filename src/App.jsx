@@ -1,6 +1,6 @@
 import Navbar from "./Navbar"
 import Card from "./Card"
-import ProCard from "./proCard"
+import ProCard from "./ProCard"
 import Footer from "./Footer"
 import Adani from "./assets/Gautam_Adani.jpg"
 
@@ -11,6 +11,7 @@ function About(){
     </>
   )
 }
+
 function App() {
 
   return (
@@ -21,7 +22,7 @@ function App() {
         <div>
           <ProCard />
           <ProCard name="LadduBhai" about="This is a Metaverse Character" isPro={true}/>
-          <ProCard name="Adani" about="Chairman of Adani Group, Richest person in Asia" img_src={Adani} alt="Prime Minister" />
+          <ProCard id="adani" name="Gautam Adani" about="Chairman of Adani Group, Richest person in Asia" img_src={Adani} alt="Prime Minister" />
           <ProCard name="Mark Zukerburg" about="Owner of Meta, React too"></ProCard>
         </div>
         <Footer />      

@@ -24,3 +24,9 @@ body{
   border-radius: 50%;
   margin-bottom: 10px;
 }
+#adani .card-head{
+  background: -webkit-linear-gradient(0deg, #0b74b0, #75479c,#bd3861); 
+  background-clip: unset;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
