@@ -1,7 +1,7 @@
 function Footer(){
 
     const styles = {
-        backgroundColor: "hsl(0, 0%, 60%)",
+        backgroundColor: "#444",
         color: "white",
         textAlign: 'center'
     }
