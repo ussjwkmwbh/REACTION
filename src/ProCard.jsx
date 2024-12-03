@@ -2,7 +2,9 @@ import PropTypes from 'prop-types'
 function ProCard(props){
     return(
         <div id={props.id} className='card'>
+            <a href={props.href}>
             <img className="card-image" src={props.img_src} alt={props.alt} />
+            </a>
             <h2 className="card-head">{props.name}</h2>
             <p className="card-para">{props.about}</p>
             {props.age && <p>Age: {props.age}</p>}
@@ -13,6 +15,7 @@ function ProCard(props){
 }
 ProCard.propTypes = {
     name: PropTypes.string,
+    about: PropTypes.string,
     age: PropTypes.number,
     isPro: PropTypes.bool
 
@@ -20,6 +23,7 @@ ProCard.propTypes = {
 ProCard.defaultProps = {
     id: "",
     name : "Guest",
-    about : "Description"
+    about : "Description",
+    href:"#"
 }
 export default ProCard
