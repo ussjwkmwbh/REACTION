@@ -1,6 +1,8 @@
 function Footer(){
 
     const styles = {
+        margin: 0,
+        padding: 0,
         backgroundColor: "#444",
         color: "white",
         textAlign: 'center'
