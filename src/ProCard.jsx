@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 function ProCard(props){
     return(
         <div id={props.id} className='card'>
-            <a href={props.href}>
+            <a href={props.href} target='_blank'>
             <img className="card-image" src={props.img_src} alt={props.alt} />
             </a>
             <h2 className="card-head">{props.name}</h2>
